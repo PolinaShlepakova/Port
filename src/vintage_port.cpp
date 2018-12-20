@@ -12,8 +12,6 @@ VintagePort::VintagePort(const char* br, int b, const char* nn, int y): Port(br,
 	if (nn != nullptr) {
 		nickname = new char[strlen(nn) + 1];
 		strcpy(nickname, nn);
-	} else {
-		delete[] nickname;
 	}
 }
 

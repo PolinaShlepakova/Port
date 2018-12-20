@@ -5,8 +5,6 @@ Port::Port(const char* br, const char* st, int b): bottles(b) {
 	if (br != nullptr) {
 		brand = new char[strlen(br) + 1];
 		strcpy(brand, br);
-	} else {
-		delete[] brand;
 	}
 	if (st != nullptr) {
 		size_t stLen = strlen(st);
